@@ -8,7 +8,7 @@
 
     &__text-content {
         position:absolute;
-        
+        padding-top: 60px;
         /*centre align vertically*/
         top: 50%;
         left: 0;
