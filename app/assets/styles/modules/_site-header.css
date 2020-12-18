@@ -3,7 +3,7 @@
   z-index:2;
   width: 100%;
   padding: 10px 0;
-  transition: all .3s ease-out;
+  transition: all .5s ease-out;
   
 
   &--is-expanded{
@@ -13,8 +13,15 @@
 
   @mixin atMedium {
     background-color: rgba($mainBlue,0.3);
+    position: fixed;
+    
+    &--dark {
+      background-color: rgba($darkBlue,0.8);
+    }
     
   }
+
+  
 
   &__btn-container {
     
@@ -30,11 +37,16 @@
     top:0;
     background-color:$mainBlue;
     padding: 1.1rem 2rem ;
+    transition: transform 0.5s ease-out;
 
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
       padding: 1.6875rem 2.5rem ;
+
+      .site-header--dark & {
+        transform: scale(0.55) translateY(-55px);
+      }
     }
   }
 
