@@ -1,14 +1,13 @@
 class Modal {
   constructor() {
     this.injectHTML();
-    this.modalBtn = document.querySelectorAll('.open-modal'); 
     this.modal = document.querySelector('.modal');
     this.closeModalBtn = document.querySelector('.modal__close');
     this.events();
   }
 
   events() {
-    this.modalBtn.forEach(el => el.addEventListener('click',(e) => this.openModal(e)));
+    
     this.closeModalBtn.addEventListener('click',() => this.closeModal());
     document.onkeyup = e => {
       if(e.keyCode === 27 && this.modal.classList.contains('modal--is-visible')) {
@@ -17,8 +16,7 @@ class Modal {
 
   }
 
-  openModal(e) {
-    e.preventDefault();
+  openModal() {
     this.modal.classList.add('modal--is-visible');   
   }
 
