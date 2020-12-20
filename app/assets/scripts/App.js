@@ -4,11 +4,10 @@ import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 
-
-
 var featureItem = document.querySelectorAll('.feature-item')
 var testimonialItem = document.querySelectorAll('.testimonial-item')
 
+alert('Testing')
 
 let mobileMenu = new MobileMenu();
 new RevealOnScroll(featureItem, 75);
