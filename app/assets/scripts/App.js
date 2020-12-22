@@ -7,8 +7,6 @@ import StickyHeader from './modules/StickyHeader';
 var featureItem = document.querySelectorAll('.feature-item')
 var testimonialItem = document.querySelectorAll('.testimonial-item')
 
-alert('Testing')
-
 let mobileMenu = new MobileMenu();
 new RevealOnScroll(featureItem, 75);
 new RevealOnScroll(testimonialItem, 60);
