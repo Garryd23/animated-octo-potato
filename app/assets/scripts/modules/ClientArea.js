@@ -5,7 +5,7 @@ class ClientArea {
   constructor() {
     this.injectHTML()
     this.form = document.querySelector('.client-area__form')
-    this.input = document.querySelector('.client-area__input')
+    this.field = document.querySelector('.client-area__input')
     this.contentArea = document.querySelector('.client-area__content-area')
     this.events()
   }
