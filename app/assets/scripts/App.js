@@ -3,10 +3,12 @@ import 'lazysizes';
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
+import ClientArea from './modules/ClientArea';
 
 var featureItem = document.querySelectorAll('.feature-item')
 var testimonialItem = document.querySelectorAll('.testimonial-item')
 
+new ClientArea();
 let mobileMenu = new MobileMenu();
 new RevealOnScroll(featureItem, 75);
 new RevealOnScroll(testimonialItem, 60);
